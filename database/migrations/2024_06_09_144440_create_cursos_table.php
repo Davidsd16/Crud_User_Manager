@@ -15,7 +15,7 @@ return new class extends Migration
             // Define un campo autoincremental para la clave primaria
             $table->id();
             // Agrega un campo para el nombre del curso
-            $table->string('name');
+            $table->string('nombre');
             // Agrega un campo para el número de horas del curso
             $table->integer('horas');
             // Agrega automáticamente los campos 'created_at' y 'updated_at' para el registro de timestamps

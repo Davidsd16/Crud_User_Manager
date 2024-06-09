@@ -21,7 +21,7 @@ return new class extends Migration
             // Define un campo para almacenar el ID del estudiante relacionado
             $table->unsignedBigInteger('estudiante_id');
             // Define una clave foránea para el campo 'estudiante_id' que referencia la tabla 'estudiantes' y se elimina en cascada
-            $table->foreign('estudiante_id')->references('id')->on('estudiante')->onDelete('cascade');
+            $table->foreign('estudiante_id')->references('id')->on('estudiantes')->onDelete('cascade'); // <-- Aquí se corrige el nombre de la tabla
             // Agrega automáticamente los campos 'created_at' y 'updated_at' para el registro de timestamps
             $table->timestamps();
         });
