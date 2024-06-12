@@ -8,3 +8,9 @@ Route::get('/', function () {
 });
 
 Route::get('/estudiantes', [EstudiantesController::class, 'index']);
+
+Route::get('/estudiante', [EstudiantesController::class, 'store']);
+
+// Route::apiResource('v1/estudiante', [EstudiantesController::class]);
+
+

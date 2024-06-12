@@ -15,7 +15,12 @@ class Estudiante extends Model
     public $table = "estudiantes";
 
     // Lista de atributos que pueden ser asignados en masa (mass assignable)
-    protected $fillable = array("*");
+    protected $fillable = [
+        'id',
+        'nombre',
+        'apellido',
+        'foto',
+    ];
 
     // Método para definir la relación muchos a muchos entre el modelo Estudiante y el modelo Curso
     public function cursos()
